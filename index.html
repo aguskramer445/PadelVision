@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PadelVision | Panel de control</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <h2><img src="New Logo PadelVision (1).png" width="250Spx" alt="">PadelVision</h2>
+        <p>Panel del proyecto</p>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#proyecto">Datos del proyecto</a>
+            <a href="#hardware">Hardware y software</a>
+            <a href="#pruebas">Pruebas realizadas</a>
+            <a href="#tareas">Tareas pendientes</a>    
+        </nav>
+    </aside>
+
+    <main>
+        <header id="inicio">
+            <p class="etiqueta">PROYECTO TECNOLÓGICO · 6° AÑO IVT</p>
+            <h1>Centro de control</h1>
+            <p>Todos los datos de PadelVision en un solo lugar.</p>
+        </header>
+
+        <section class="hero">
+            <div>
+                <span>SISTEMA VAR PARA PÁDEL</span>
+                <h2>Revisar la jugada.<br>
+                    <strong>Decidir con evidencia.</strong>
+                </h2>
+                <p>
+                    Sistema de cámaras con análisis de imagen para
+                    detectar la pelota, estudiar posibles piques y
+                    ayudar a revisar jugadas dudosas.
+                </p>
+            </div>
+            <div class="cancha">
+                <div class="linea vertical"></div>
+                <div class="linea horizontal"></div>
+                <div class="pelota"></div>
+            </div>
+        </section>
+
+        <section class="estadisticas">
+            <article class="tarjeta">
+                <p>Integrantes</p>
+                <h2>02</h2>
+                <small>Equipo de trabajo</small>
+            </article>
+
+            <article class="tarjeta">
+                <p>Cámaras previstas</p>
+                <h2>02</h2>
+                <small>Camera Module V2</small>
+            </article>
+
+            <article class="tarjeta">
+                <p>Funciones principales</p>
+                <h2>03</h2>
+                <small>Captura, detección y revisión</small>
+            </article>
+
+            <article class="tarjeta">
+                <p>Estado</p>
+                <h2 class="estado">En prueba</h2>
+                <small>Prototipo en desarrollo</small>
+            </article>
+        </section>
+
+        <section class="panel" id="proyecto">
+            <h2>Datos del proyecto</h2>
+
+            <div class="dato">
+                <span>Nombre</span>
+                <strong>PadelVision — Sistema de Cámara VAR Automática para Pádel</strong>
+            </div>
+
+            <div class="dato">
+                <span>Integrantes</span>
+                <strong>Agustín Kramer y Camilo Yorgovan</strong>
+            </div>
+
+            <div class="dato">
+                <span>Curso</span>
+                <strong>6° Año IVT</strong>
+            </div>
+
+            <div class="dato">
+                <span>Objetivo</span>
+                <strong>
+                    Ayudar a revisar jugadas dudosas y determinar si
+                    la pelota picó dentro o fuera de la cancha.
+                </strong>
+            </div>
+
+            <div class="dato">
+                <span>Problema</span>
+                <strong>
+                    Algunas jugadas son muy rápidas y difíciles de
+                    observar con precisión durante un partido.
+                </strong>
+            </div>
+
+            <h3>Funciones principales</h3>
+
+            <div class="funcion">
+                <b>01</b>
+                <div>
+                    <strong>Captura de video</strong>
+                    <p>Observar la cancha mediante cámaras conectadas a la Raspberry Pi.</p>
+                </div>
+            </div>
+
+            <div class="funcion">
+                <b>02</b>
+                <div>
+                    <strong>Detección de pelota y pique</strong>
+                    <p>Analizar la imagen y seguir el movimiento de la pelota.</p>
+                </div>
+            </div>
+
+            <div class="funcion">
+                <b>03</b>
+                <div>
+                    <strong>Asistencia arbitral</strong>
+                    <p>Mostrar una sugerencia de IN, OUT o REVISAR.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="panel" id="hardware">
+            <h2>Hardware y software</h2>
+
+            <div class="componente">
+                <strong>Raspberry Pi 4</strong>
+                <p>Placa principal encargada de ejecutar el programa.</p>
+            </div>
+
+            <div class="componente">
+                <strong>Raspberry Pi Camera Module V2</strong>
+                <p>Cámaras oficiales utilizadas para capturar las imágenes.</p>
+            </div>
+
+            <div class="componente">
+                <strong>Cables CSI, fuente y microSD</strong>
+                <p>Elementos necesarios para conectar y alimentar el sistema.</p>
+            </div>
+
+            <div class="componente">
+                <strong>Python</strong>
+                <p>Lenguaje utilizado para desarrollar el programa.</p>
+            </div>
+
+            <div class="componente">
+                <strong>Picamera2 y OpenCV</strong>
+                <p>Herramientas para capturar y procesar imágenes.</p>
+            </div>
+
+            <div class="componente">
+                <strong>Teachable Machine</strong>
+                <p>Herramienta considerada para experimentar con inteligencia artificial.</p>
+            </div>
+
+            <p class="aviso">
+                Estado técnico: se reportaron problemas para reconocer
+                la cámara. La detección de la pelota y del pique necesita
+                continuar probándose y mejorándose.
+            </p>
+        </section>
+
+        <section class="panel" id="pruebas">
+            <h2>Pruebas realizadas</h2>
+            <p>Agregá los resultados de las nuevas pruebas.</p>
+
+            <div class="formulario">
+                <input id="nombrePrueba"
+                    placeholder="Nombre de la prueba">
+
+                <select id="estadoPrueba">
+                    <option value="Pendiente">Pendiente</option>
+                    <option value="En prueba">En prueba</option>
+                    <option value="Parcial">Parcial</option>
+                    <option value="Completado">Completado</option>
+                </select>
+
+                <textarea id="resultadoPrueba"
+                    placeholder="Escribí qué ocurrió en la prueba"></textarea>
+
+                <button onclick="agregarPrueba()">
+                    Guardar prueba
+                </button>
+            </div>
+
+            <div class="tabla-contenedor">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Prueba</th>
+                            <th>Resultado</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody id="listaPruebas"></tbody>
+                </table>
+            </div>
+
+            <button class="secundario" onclick="exportarDatos()">
+                Exportar datos
+            </button>
+        </section>
+
+        <section class="panel" id="tareas">
+            <h2>Tareas pendientes</h2>
+            <p>Marcá las tareas a medida que las vayas completando.</p>
+
+            <div id="listaTareas">
+                <label><input type="checkbox">
+                    Revisar la conexión de la cámara
+                </label>
+
+                <label><input type="checkbox">
+                    Conseguir una imagen estable
+                </label>
+
+                <label><input type="checkbox">
+                    Mejorar la detección de la pelota
+                </label>
+
+                <label><input type="checkbox">
+                    Detectar correctamente el pique
+                </label>
+
+                <label><input type="checkbox">
+                    Calibrar las líneas de la cancha
+                </label>
+
+                <label><input type="checkbox">
+                    Guardar fotos de las jugadas
+                </label>
+
+                <label><input type="checkbox">
+                    Probar el sistema en una cancha real
+                </label>
+            </div>
+
+            <div class="progreso">
+                <p>Progreso: <strong id="porcentaje">0%</strong></p>
+                <div class="barra">
+                    <div id="barraProgreso"></div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            PadelVision · Proyecto escolar de tecnología · 6° Año IVT
+        </footer>
+    </main>
+
+    <script src="java.js"></script>
+</body>
+</html>
+    
+</body>
+</html>
